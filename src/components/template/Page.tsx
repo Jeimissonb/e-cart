@@ -7,9 +7,16 @@ export interface PageProps {
 
 export default function Page(props: PageProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main>{props.children}</main>
+      <main
+        className={`
+          w-[1200px] mx-auto flex-1
+          ${props.className ?? ''} py-10`
+        }
+      >
+        {props.children}
+      </main>
     </div>
   )
 }

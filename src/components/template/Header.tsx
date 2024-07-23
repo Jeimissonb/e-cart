@@ -1,3 +1,4 @@
+import Cart from "./Cart";
 import Logo from "./Logo";
 
 export default function Header () {
@@ -8,6 +9,7 @@ export default function Header () {
             "
     >
       <Logo />
+      <Cart />
     </header>
   )
 }
